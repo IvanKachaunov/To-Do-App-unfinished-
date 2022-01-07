@@ -1,2 +1,3 @@
 # To-Do-App-unfinished-
-A To-Do App using Jquery that's still in a process of developing and improving
+This App allows the user to create his own tasks and organize his lifestyle
+Future updates on the app soon!
