@@ -9,31 +9,26 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="app.js"></script>
 </head>
 <body>
     <h1 class="title">WORKS TO BE DONE</h1>
     
     <div class="text-input">
-        <form>
-            <input type="text" id="To-Do" placeholder="Enter The Work" type="submit"><br>
+            <form>
+            <input type="text" id="To-Do" placeholder="Enter The Work"><br>
             <!-- <div class="button-shape"> -->
-                <button class="To-DoButton" > <i class="plus-square"></i> </button>
+                <button class="To-DoButton"> <i class="plus-square"></i> </button>
                 <!-- </div> -->
-                
-                <!-- <select name="to-do" id="Selector">
-                    <option value="all">All</option>
-                    <option value="completed">Completed</option>
-                    <option value="uncompleted">Uncompleted</option>
-                </select> -->
             </form>
         </div>
+        <div id="button-container">
+            <button id="delete">Delete all</button>
+        </div>
+
+        <ul class="info-container">
+            
+        </ul>
         
-        <!-- container for adding by using Jquery -->
-        <!-- <div class="todo_container">
-            <div class="todo_list"></div>
-        </div> -->
-        
-        <span id="guests"></span>
+        <script src="app.js"></script>
 </body>
 </html>

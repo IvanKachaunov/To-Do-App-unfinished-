@@ -30,7 +30,8 @@ form{   /* centering the 2 forms next to each other */
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 60px;
+    margin-top: 60px;
+    margin-bottom: 20px;
 }
 
 #To-Do{ /* form */
@@ -38,6 +39,7 @@ form{   /* centering the 2 forms next to each other */
     height: 40px;
     margin-right: 15px;
     font-size: 20px;    /* Increases placeholder text size */
+    /* justify-content: space-around; */
 }
 
 #Selector{ /* form */
@@ -62,6 +64,20 @@ button{
     cursor: pointer;
 }
 
+#button-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#delete{
+    background-color: #242124;
+    width: 75px;
+    height: 35px;
+    font-size: 16px;
+    color: rgb(183, 183, 183);
+}
+
 .plus-square:after {
     content: '';
     position: absolute;
@@ -83,42 +99,58 @@ button{
     height: 13px;
     width: 4px;
   }
-  
-/* styling where tasks are shown */
-/* .todo_container{
+
+.info-container{
     display: flex;
-    justify-content: center;
     align-items: center;
+    font-size: 15px;
+    width: 100%;
+    height: 90vh;
+    flex-direction: column; 
+    margin-top: 20px;
 }
 
-.todo_list{
-    min-width: 40%;
+.info-container li{
     list-style: none;
+    font-size: 23px;
+    height: 25px;   
+    background-color: #1c1051;
+    color: rgb(234, 234, 234);
+    margin: 5px;
+    font-family: 'Courier New', Courier, monospace;
 }
 
-.todo{
-    margin: 5px auto;
-    background: white;
-    color: #000000;
+.checkbox{
+    margin: 5px;
+    margin-right: 20px;
+    height: 15px;
+    width: 15px;
+}
+
+.info-container li{
     display: flex;
-    font-size: 1.2rem;
-    padding: 0.3rem;
-    justify-content: space-between;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
     align-items: center;
-    transition: all 0.5s ease;
+    border-radius: 5px;
 }
 
-.todo {
-    flex: 1;
-} */
-
-#guests{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+#update{
+    margin-left: 105px;
+    background: url(favicon-16x16.png);
+    height: 18px;
+    width: 18px;
 }
 
-span{
-    /* padding: 2rem;
-    background-color: blanchedalmond; */
+#delete-content{
+    margin-left: 20px;
+    background: url(trash-16x16.png);
+    height: 18px;
+    width: 18px; 
+}
+
+
+input:checked ~ .checkmark {
+  background-color: #2196F3;
 }
